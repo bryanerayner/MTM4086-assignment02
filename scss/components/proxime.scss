@@ -1,0 +1,30 @@
+@import "mixins/layout";
+
+.proxime
+	{
+		@extend %clearfix;
+		width:100%; color: #606060; font-size: .750em;
+		-webkit-font-smoothing: antialiased; white-space: nowrap;
+
+	li
+		{
+			float:left;
+
+	}
+	.proxime-shareStats
+		{
+			margin-top:-1px;
+	}
+	.proxime-source
+		{
+
+	}
+	.proxime-type
+		{
+
+	}
+	.proxime-tag
+		{
+
+	}
+}

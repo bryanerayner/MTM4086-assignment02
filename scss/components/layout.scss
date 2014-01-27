@@ -1,0 +1,110 @@
+@import "mixins/layout";
+
+
+$l-constrained--max-width:1024px !default;
+$l-constrained-wider--max-width:1200px !default;
+
+.l-left
+	{
+		float:left;
+	}
+
+.l-right
+	{
+		float:right;
+	}
+
+.l-constrained
+	{
+		max-width:$l-constrained--max-width;
+		width:100%;
+		margin: 0 auto;
+
+		@extend %clearfix;
+		&.l-constrained-wider
+			{
+				max-width: $l-constrained-wider--max-width;
+			}
+	}
+
+.l-topBar
+	{
+		position:relative;
+		top:0;
+		width:100%;
+
+		&.is-pinned
+		{
+			position: fixed;
+		}
+	}
+
+.l-title
+	{
+
+	}
+
+.l-colourstrip 
+	{
+		width:100%;
+		@extend %clearfix;
+
+}
+
+
+.l-grid-container
+	{
+		width:100%;
+		@extend %clearfix;
+
+	[class*="l-grid-cell"]
+		{
+			float:left;
+
+		&:last-child
+			{
+				float:right;
+
+		}
+
+		&:last-child.l-grid-last
+			{
+				float:left;
+		}
+
+	}
+
+	.l-grid-cell-1
+		{
+			width:100%;
+		
+	}
+
+	.l-grid-cell-3
+		{
+			width:33.33%;
+		
+	}	
+
+	.l-grid-cell-5
+		{
+			width:20%;
+
+	}
+}
+
+.l-list-container
+	{
+		.l-list-1
+			{
+
+			}
+	}
+
+.l-list-horizontal-container
+	{
+		li
+			{
+
+			}
+	}

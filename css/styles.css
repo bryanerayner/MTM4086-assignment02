@@ -1,0 +1,289 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box; }
+
+body {
+  font: 100%/120% "source-sans-pro","Helvetica Neue",sans-serif; }
+
+ul {
+  list-style-type: none; }
+
+main {
+  padding-top: 54px; }
+
+h1, h2, h3, h4, h5, h6, ul, ol, li {
+  margin: 0;
+  padding: 0; }
+
+.l-constrained:after, .l-colourstrip:after, .l-grid-container:after, .proxime:after, .story:after {
+  display: table;
+  content: " ";
+  clear: both; }
+
+.l-left {
+  float: left; }
+
+.l-right {
+  float: right; }
+
+.l-constrained {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto; }
+  .l-constrained.l-constrained-wider {
+    max-width: 1200px; }
+
+.l-topBar {
+  position: relative;
+  top: 0;
+  width: 100%; }
+  .l-topBar.is-pinned {
+    position: fixed; }
+
+.l-colourstrip {
+  width: 100%; }
+
+.l-grid-container {
+  width: 100%; }
+  .l-grid-container [class*="l-grid-cell"] {
+    float: left; }
+    .l-grid-container [class*="l-grid-cell"]:last-child {
+      float: right; }
+    .l-grid-container [class*="l-grid-cell"]:last-child.l-grid-last {
+      float: left; }
+  .l-grid-container .l-grid-cell-1 {
+    width: 100%; }
+  .l-grid-container .l-grid-cell-3 {
+    width: 33.33%; }
+  .l-grid-container .l-grid-cell-5 {
+    width: 20%; }
+
+.linkList > li {
+  margin-left: 6px; }
+  .linkList > li::before {
+    content: "\00b7";
+    display: inline-block; }
+  .linkList > li:first-child {
+    margin-left: 0; }
+    .linkList > li:first-child::before {
+      content: "";
+      display: none; }
+
+.logo {
+  float: left; }
+
+.nav-primary {
+  float: left; }
+
+.nav-secondary {
+  float: left; }
+
+.nav-item {
+  float: left; }
+
+.l-constrained:after, .l-colourstrip:after, .l-grid-container:after, .proxime:after, .story:after {
+  display: table;
+  content: " ";
+  clear: both; }
+
+.proxime {
+  width: 100%;
+  color: #606060;
+  font-size: .750em;
+  -webkit-font-smoothing: antialiased;
+  white-space: nowrap; }
+  .proxime li {
+    float: left; }
+  .proxime .proxime-shareStats {
+    margin-top: -1px; }
+
+.shareStats {
+  position: relative;
+  color: #444;
+  font-size: 1em;
+  font-weight: bold; }
+  .shareStats .speechBubble {
+    bottom: 125%; }
+  .shareStats .shareStats-stat {
+    float: left;
+    clear: left;
+    width: 100px;
+    padding: .250em 0 .333em; }
+    .shareStats .shareStats-stat::before {
+      content: "";
+      display: inline-block;
+      width: 13px;
+      height: 15px;
+      margin: 0px 10px -2px 0px;
+      background-repeat: no-repeat; }
+
+/*
+
+ Includes styles for differing types of presntation elements. 
+ Rounded borders, CSS arrows, etc are found here.
+
+
+
+ */
+.arrow {
+  position: absolute; }
+  .arrow::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0; }
+  .arrow.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid rgba(0, 0, 0, 0); }
+    .arrow.arrow-down::after {
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-top: 10px solid rgba(0, 0, 0, 0);
+      left: -10px;
+      top: -11px; }
+  .arrow.arrow-left {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid rgba(0, 0, 0, 0);
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid transparent; }
+    .arrow.arrow-left::after {
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid rgba(0, 0, 0, 0);
+      border-bottom: 10px solid transparent;
+      border-top: 10px solid transparent;
+      right: -11px;
+      bottom: -10px; }
+  .arrow.arrow-right {
+    width: 0;
+    height: 0;
+    border-left: 10px solid rgba(0, 0, 0, 0);
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid transparent; }
+    .arrow.arrow-right::after {
+      width: 0;
+      height: 0;
+      border-left: 10px solid rgba(0, 0, 0, 0);
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-top: 10px solid transparent;
+      left: -11px;
+      bottom: -10px; }
+  .arrow.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid rgba(0, 0, 0, 0);
+    border-top: 10px solid transparent; }
+    .arrow.arrow-up::after {
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid rgba(0, 0, 0, 0);
+      border-top: 10px solid transparent;
+      left: -10px;
+      bottom: -11px; }
+
+/*
+
+ Includes styles for differing types of presntation elements. 
+ Rounded borders, CSS arrows, etc are found here.
+
+
+
+ */
+.speechBubble {
+  border-radius: 5px;
+  border: 1px solid;
+  padding: 10px 8px;
+  position: absolute;
+  left: -10px;
+  background-color: #fff; }
+  .speechBubble .arrow {
+    top: 100%; }
+  .speechBubble.is-speechBubble-collapsed {
+    display: none; }
+
+.summary .summary-snippet {
+  font: 700 .688em/1.091em "lft-etica","Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #555;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0 0 .364em; }
+.summary .summary-headline {
+  font: 700 1.375em/1.136em "lft-etica","Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #191919;
+  margin-bottom: 4px; }
+.summary .summary-exerpt {
+  font: .875em/1.286em "source-sans-pro","Helvetica Neue",sans-serif;
+  color: #444;
+  margin: .250em 0 .357em; }
+.summary.summary-large .summary-headline {
+  font-size: 2.313em;
+  line-height: 1.027em; }
+.summary.summary-large .summary-exerpt {
+  font-size: 1em;
+  line-height: 1.250em;
+  margin-top: 2px; }
+
+.l-constrained:after, .l-colourstrip:after, .l-grid-container:after, .proxime:after, .story:after {
+  display: table;
+  content: " ";
+  clear: both; }
+
+.story {
+  width: 100%;
+  float: left;
+  padding: 0;
+  margin: 0 0 0 7px; }
+  .story .story-image, .story .story-video {
+    width: 100%; }
+  .story.story-fullWidth .story-image, .story.story-fullWidth .story-video {
+    float: left;
+    width: 65.64%;
+    margin-right: 32px; }
+  .story.story-fullWidth .summary {
+    width: 31%;
+    float: right; }
+  .story.story-list .story-image, .story.story-list .story-video {
+    float: left;
+    width: 30.25%; }
+
+.shareStats-stat::before {
+  background: url("../images/sprite-digg-icons.png"); }
+
+.shareStats-digg::before {
+  background-position: 2px -189px; }
+
+.shareStats-fb::before {
+  background-position: 0px -263px; }
+
+.shareStats-t::before {
+  background-position: 0px -227px; }
+
+.speechBubble {
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  border-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(250, 250, 250, 0.97); }
+
+.arrow.arrow-down {
+  border-top-color: rgba(0, 0, 0, 0.25); }
+  .arrow.arrow-down::after {
+    border-top-color: rgba(250, 250, 250, 0.97); }

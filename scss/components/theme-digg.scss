@@ -1,0 +1,81 @@
+.is-hoverable
+{
+
+}
+
+.digg-mostDuggVideos
+{
+
+}
+
+.digg-mostDugg-list
+{
+
+}
+
+.digg-upcoming-list
+{
+	
+}
+
+
+
+
+
+/////// shareStats ////////
+
+
+.shareStats-stat
+	{
+	&::before
+		{
+			background: url("../images/sprite-digg-icons.png"); 
+	}
+}
+
+.shareStats-digg
+	{
+	&::before
+		{
+			background-position: 2px -189px;
+	}			
+}
+.shareStats-fb
+	{
+	&::before
+		{
+			background-position: 0px -263px;
+	}			
+}
+.shareStats-t
+	{
+	&::before
+		{
+			background-position: 0px -227px;
+	}			
+}
+
+
+////// speechBubble ////////
+
+.speechBubble
+	{
+		-webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+		box-shadow: 0 5px 10px rgba(0,0,0,0.15); 
+		border-color: rgba(0,0,0,0.2);
+		background-color:rgba(250,250,250,0.97);
+}
+
+/////// arrow /////////////
+.arrow
+	{
+	&.arrow-down
+		{
+		border-top-color: rgba(0,0,0,0.25);
+		&::after
+			{
+			border-top-color: rgba(250,250,250,0.97);
+		}
+	}
+	
+}

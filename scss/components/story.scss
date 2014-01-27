@@ -1,0 +1,53 @@
+@import "mixins/layout";
+
+.story 
+	{
+		width:100%; float:left; padding: 0; margin:0 0 0 7px;
+		@extend %clearfix;
+
+	.story-image, .story-video
+		{
+		width:100%;
+	}
+
+	.summary
+		{
+						
+	}
+
+	&.story-fullWidth
+		{
+
+		.story-image, .story-video
+			{
+				float:left; width: 65.64%; margin-right:32px;
+		}
+
+		.summary
+			{
+				width: 31%;
+				float:right;
+		}
+		
+	}
+
+	&.story-small
+		{
+		
+	}
+
+	&.story-list
+		{
+
+		.story-image, .story-video
+			{
+			float:left;	width:30.25%
+		}
+	}
+
+	&.story-summary
+		{
+		
+	}
+
+}

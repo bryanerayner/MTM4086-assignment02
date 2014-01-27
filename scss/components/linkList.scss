@@ -1,0 +1,30 @@
+.linkList
+	{
+
+	> li
+		{
+			margin-left:6px;
+
+		&::before
+			{
+				content:"\00b7";//Equivalent to &middot;
+				display:inline-block;
+
+		}
+
+		&:first-child
+			{
+				margin-left:0;
+				
+				&::before
+					{
+						content:"";
+						display:none;
+
+				}
+
+		}
+				
+	}
+		
+}
