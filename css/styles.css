@@ -12,6 +12,16 @@ body {
 ul {
   list-style-type: none; }
 
+ol {
+  counter-reset: outerOL;
+  list-style-type: none; }
+  ol ol {
+    counter-reset: innerOL; }
+    ol ol > li {
+      counter-increment: innerOL; }
+  ol > li {
+    counter-increment: outerOL; }
+
 main {
   padding-top: 54px; }
 
@@ -23,7 +33,7 @@ h1, h2, h3, h4, h5, h6, ul, ol, li {
   margin: 0;
   padding: 0; }
 
-.l-constrained:after, .l-title:after, .l-colourstrip:after, .l-grid-container:after, .proxime:after, .story:after {
+.l-constrained:after, .l-title:after, .l-colourstrip:after, .l-grid-container:after, .proxime:after, .digg-mostDugg-list:after, .story:after {
   display: table;
   content: " ";
   clear: both; }
@@ -47,9 +57,6 @@ h1, h2, h3, h4, h5, h6, ul, ol, li {
   width: 100%; }
   .l-topBar.is-pinned {
     position: fixed; }
-
-.l-title {
-  padding: 25px 0; }
 
 .l-colourstrip {
   width: 100%; }
@@ -79,6 +86,14 @@ h1, h2, h3, h4, h5, h6, ul, ol, li {
 .l-digg-mostDugg {
   width: 66%;
   float: left; }
+  .l-digg-mostDugg ol > li {
+    position: relative; }
+    .l-digg-mostDugg ol > li::before {
+      float: left;
+      display: block;
+      position: relative;
+      left: -1em;
+      top: 1.35em; }
 
 .linkList > li {
   margin-left: 6px; }
@@ -116,7 +131,7 @@ h1, h2, h3, h4, h5, h6, ul, ol, li {
   letter-spacing: 1px;
   font: .875em "lft-etica","Helvetica Neue",Helvetica,Arial,sans-serif; }
 
-.l-constrained:after, .l-title:after, .l-colourstrip:after, .l-grid-container:after, .proxime:after, .story:after {
+.l-constrained:after, .l-title:after, .l-colourstrip:after, .l-grid-container:after, .proxime:after, .digg-mostDugg-list:after, .story:after {
   display: table;
   content: " ";
   clear: both; }
@@ -155,7 +170,8 @@ h1, h2, h3, h4, h5, h6, ul, ol, li {
   -moz-transition: opacity 0.15s cubic-bezier(0, 0, 0.58, 1);
   -o-transition: opacity 0.15s cubic-bezier(0, 0, 0.58, 1);
   transition: opacity 0.15s cubic-bezier(0, 0, 0.58, 1);
-  opacity: 0; }
+  opacity: 0;
+  margin-left: -3px; }
 
 .story:hover .sharing, .summary:hover .sharing {
   opacity: 1; }
@@ -278,6 +294,16 @@ h1, h2, h3, h4, h5, h6, ul, ol, li {
     background-image: url("../images/sprite-t-sm.png");
     background-position: 0px 2px; }
 
+.l-constrained:after, .l-title:after, .l-colourstrip:after, .l-grid-container:after, .proxime:after, .digg-mostDugg-list:after, .story:after {
+  display: table;
+  content: " ";
+  clear: both; }
+
+.digg-mostDugg-list {
+  border-right: 1px solid;
+  clear: left;
+  padding-right: 20%; }
+
 .btn.btn-hollow {
   float: left;
   font-size: .875em;
@@ -309,7 +335,7 @@ h1, h2, h3, h4, h5, h6, ul, ol, li {
   line-height: 1.250em;
   margin-top: 2px; }
 
-.l-constrained:after, .l-title:after, .l-colourstrip:after, .l-grid-container:after, .proxime:after, .story:after {
+.l-constrained:after, .l-title:after, .l-colourstrip:after, .l-grid-container:after, .proxime:after, .digg-mostDugg-list:after, .story:after {
   display: table;
   content: " ";
   clear: both; }
@@ -331,9 +357,21 @@ h1, h2, h3, h4, h5, h6, ul, ol, li {
     .story.story-fullWidth .summary {
       width: 31%;
       float: right; }
-  .story.story-list .story-image, .story.story-list .story-video {
-    float: left;
-    width: 30.25%; }
+  .story.story-list {
+    position: relative;
+    border-bottom: 1px solid; }
+    .story.story-list > .story-list-counter {
+      position: absolute;
+      left: -1em;
+      top: 1.5em; }
+      .story.story-list > .story-list-counter::before {
+        content: counter(outerOL);
+        display: block; }
+    .story.story-list .story-image, .story.story-list .story-video {
+      float: left;
+      width: 30.25%; }
+    .story.story-list .summary {
+      float: right; }
 
 .l-grid-rowStart.l-grid-cell-3 .story {
   padding-left: 0;
@@ -352,6 +390,7 @@ h1, h2, h3, h4, h5, h6, ul, ol, li {
   padding-right: 0; }
 
 .section-title {
+  padding: 25px 0;
   font: .875em "lft-etica","Helvetica Neue",Helvetica,Arial,sans-serif;
   float: left;
   text-transform: uppercase; }
@@ -359,6 +398,9 @@ h1, h2, h3, h4, h5, h6, ul, ol, li {
 .digg-mostDuggVideos {
   background: url("../images/bg-video.jpeg");
   background-size: cover; }
+
+.digg-mostDugg-list {
+  border-right-color: #ebebeb; }
 
 .l-topBar {
   -webkit-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5);
@@ -368,6 +410,8 @@ h1, h2, h3, h4, h5, h6, ul, ol, li {
   z-index: 10000; }
 
 .story.story-fullWidth {
+  border-bottom-color: #ebebeb; }
+.story.story-list {
   border-bottom-color: #ebebeb; }
 
 .section-title.section-title-onDark {

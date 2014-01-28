@@ -11,7 +11,8 @@
 }
 
 .digg-mostDugg-list
-{
+	{
+		border-right-color: #ebebeb;
 
 }
 
@@ -20,7 +21,11 @@
 	
 }
 
+.l-digg-mostDugg
+	{
+		
 
+}
 
 
 //////// topBar///////
@@ -40,6 +45,11 @@
 		{
 			border-bottom-color: #ebebeb;
 
+	}
+
+	&.story-list
+		{
+			border-bottom-color:#ebebeb;
 	}
 }
 

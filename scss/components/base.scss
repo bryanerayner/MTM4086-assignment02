@@ -48,6 +48,26 @@ li
 		
 	}
 
+ol
+{
+	counter-reset: outerOL;
+	list-style-type:none;
+	ol
+	{
+		counter-reset: innerOL;
+		> li
+			{
+			counter-increment: innerOL;
+		}
+	}
+
+	> li 
+		{
+			counter-increment: outerOL;
+	}	
+	
+}
+
 	
 a
 	{
