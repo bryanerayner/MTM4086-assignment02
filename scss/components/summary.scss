@@ -3,7 +3,7 @@
 	.summary-snippet
 		{
 			font: 700 .688em/1.091em "lft-etica","Helvetica Neue",Helvetica,Arial,sans-serif;
-			color:#555; letter-spacing: 1px;
+			letter-spacing: 1px;
 			text-transform: uppercase;
 			margin: 0 0 .364em;
 	}
@@ -11,14 +11,12 @@
 	.summary-headline
 		{
 			font: 700 1.375em/1.136em "lft-etica","Helvetica Neue",Helvetica,Arial,sans-serif;			
-			color:#191919;
 			margin-bottom: 4px; 
 	}
 		
 	.summary-exerpt
 		{
 			font: .875em/1.286em "source-sans-pro","Helvetica Neue",sans-serif;
-			color: #444;
 			margin: .250em 0 .357em;
 	}
 		
@@ -39,6 +37,11 @@
 
 	}
 	&.summary-small
+		{
+
+	}
+
+	&.summary-onDark
 		{
 
 	}

@@ -3,7 +3,7 @@
 .proxime
 	{
 		@extend %clearfix;
-		width:100%; color: #606060; font-size: .750em;
+		width:100%; font-size: .750em;
 		-webkit-font-smoothing: antialiased; white-space: nowrap;
 
 	li
@@ -24,6 +24,12 @@
 
 	}
 	.proxime-tag
+		{
+
+	}
+
+
+	&.proxime-onDark
 		{
 
 	}

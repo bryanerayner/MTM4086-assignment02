@@ -1,0 +1,11 @@
+.btn.btn-hollow {
+  float: left;
+  font-size: .875em;
+  text-decoration: none;
+  border: 1px solid;
+  border-radius: 4px;
+  display: block;
+  padding: 2px 5px 1px 5px;
+  margin-right: -2px; }
+  .btn.btn-hollow .icn {
+    margin-top: -1px; }

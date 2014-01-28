@@ -1,0 +1,78 @@
+.digg-mostDuggVideos {
+  background: url("../images/bg-video.jpeg");
+  background-size: cover; }
+
+.l-topBar {
+  -webkit-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5);
+  border-bottom-width: 0;
+  background-color: #fff;
+  z-index: 10000; }
+
+.story.story-fullWidth {
+  border-bottom-color: #ebebeb; }
+
+.section-title.section-title-onDark {
+  color: #fff; }
+
+.shareStats-digg::before {
+  background-position: 2px -189px; }
+
+.shareStats-fb::before {
+  background-position: 0px -263px; }
+
+.shareStats-t::before {
+  background-position: 0px -227px; }
+
+.shareStats {
+  color: #444; }
+  .shareStats .shareStats-stat::before {
+    background: url("../images/sprite-digg-icons.png"); }
+  .shareStats.shareStats-onDark .shareStats-front {
+    color: #fff; }
+
+.summary .summary-snippet {
+  color: #555; }
+.summary .summary-headline {
+  color: #191919; }
+.summary .summary-exerpt {
+  color: #444; }
+.summary.summary-onDark {
+  color: #fff; }
+  .summary.summary-onDark .summary-snippet {
+    color: #fff; }
+  .summary.summary-onDark .summary-headline {
+    color: #fff; }
+
+.btn.btn-hollow {
+  color: #0093cc;
+  border-color: rgba(220, 235, 245, 0); }
+  .btn.btn-hollow:hover, .btn.btn-hollow.is-hover {
+    border-color: #dcebf5; }
+
+.speechBubble {
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  border-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(250, 250, 250, 0.97); }
+
+.arrow.arrow-down {
+  border-top-color: rgba(0, 0, 0, 0.25); }
+  .arrow.arrow-down::after {
+    border-top-color: rgba(250, 250, 250, 0.97); }
+
+.nav-item a {
+  color: #aaa;
+  text-decoration: none;
+  -webkit-transition: color 120ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -moz-transition: color 120ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -o-transition: color 120ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: color 120ms cubic-bezier(0.455, 0.03, 0.515, 0.955); }
+
+.nav-secondary > .nav-item a {
+  color: #7a7a7a; }
+
+.proxime {
+  color: #606060; }
+  .proxime.proxime-onDark {
+    color: #fff; }

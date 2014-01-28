@@ -1,0 +1,48 @@
+.l-constrained:after, .l-title:after, .l-colourstrip:after, .l-grid-container:after {
+  display: table;
+  content: " ";
+  clear: both; }
+
+.l-left {
+  float: left; }
+
+.l-right {
+  float: right; }
+
+.l-constrained {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto; }
+  .l-constrained.l-constrained-wider {
+    max-width: 1200px; }
+
+.l-topBar {
+  position: relative;
+  top: 0;
+  width: 100%; }
+  .l-topBar.is-pinned {
+    position: fixed; }
+
+.l-title {
+  padding: 25px 0; }
+
+.l-colourstrip {
+  width: 100%; }
+
+.l-viewMore {
+  float: right; }
+
+.l-grid-container {
+  width: 100%; }
+  .l-grid-container [class*="l-grid-cell"] {
+    float: left; }
+    .l-grid-container [class*="l-grid-cell"]:last-child {
+      float: right; }
+    .l-grid-container [class*="l-grid-cell"]:last-child.l-grid-last {
+      float: left; }
+  .l-grid-container .l-grid-cell-1 {
+    width: 100%; }
+  .l-grid-container .l-grid-cell-3 {
+    width: 33.33%; }
+  .l-grid-container .l-grid-cell-5 {
+    width: 20%; }

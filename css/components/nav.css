@@ -1,0 +1,18 @@
+.nav-primary {
+  float: left; }
+  .nav-primary > .nav-item {
+    text-transform: uppercase; }
+
+.nav-secondary {
+  float: left; }
+  .nav-secondary > .nav-item {
+    padding: 1.063em 0 .938em;
+    margin: 0 3px 0 0;
+    color: #7a7a7a;
+    font: .875em "source-sans-pro","Helvetica Neue",sans-serif; }
+
+.nav-item {
+  float: left;
+  padding: 1.357em .750em 1.286em;
+  letter-spacing: 1px;
+  font: .875em "lft-etica","Helvetica Neue",Helvetica,Arial,sans-serif; }

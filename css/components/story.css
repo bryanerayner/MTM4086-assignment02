@@ -1,0 +1,41 @@
+.story:after {
+  display: table;
+  content: " ";
+  clear: both; }
+
+.story {
+  width: 100%;
+  float: left;
+  padding: 3% 3% 6%;
+  margin: 0 0 7px; }
+  .story .story-image, .story .story-video {
+    width: 100%; }
+  .story.story-fullWidth {
+    border-bottom: 1px solid;
+    padding: 17px 0; }
+    .story.story-fullWidth .story-image, .story.story-fullWidth .story-video {
+      float: left;
+      width: 65.64%;
+      margin-right: 32px; }
+    .story.story-fullWidth .summary {
+      width: 31%;
+      float: right; }
+  .story.story-list .story-image, .story.story-list .story-video {
+    float: left;
+    width: 30.25%; }
+
+.l-grid-rowStart.l-grid-cell-3 .story {
+  padding-left: 0;
+  padding-right: 6%; }
+
+.l-grid-rowEnd.l-grid-cell-3 .story {
+  padding-left: 6%;
+  padding-right: 0; }
+
+.l-grid-rowStart.l-grid-cell-5 .story {
+  padding-left: 0;
+  padding-right: 6%; }
+
+.l-grid-rowEnd.l-grid-cell-5 .story {
+  padding-left: 6%;
+  padding-right: 0; }

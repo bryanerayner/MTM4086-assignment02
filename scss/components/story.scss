@@ -2,7 +2,7 @@
 
 .story 
 	{
-		width:100%; float:left; padding: 0; margin:0 0 0 7px;
+		width:100%; float:left; padding: 3% 3% 6%; margin:0 0 7px;
 		@extend %clearfix;
 
 	.story-image, .story-video
@@ -17,6 +17,7 @@
 
 	&.story-fullWidth
 		{
+			border-bottom:1px solid; padding: 17px 0; 
 
 		.story-image, .story-video
 			{
@@ -41,7 +42,7 @@
 
 		.story-image, .story-video
 			{
-			float:left;	width:30.25%
+			float:left;	width:30.25%;
 		}
 	}
 
@@ -51,3 +52,33 @@
 	}
 
 }
+
+
+//Enable grid to work with padding:
+
+
+
+@mixin story_centerGridPadding($n)
+	{
+
+	.l-grid-rowStart.l-grid-cell-#{$n}
+		{
+		& .story
+			{
+				padding-left:0;
+				padding-right:6%;
+		}
+	}
+
+	.l-grid-rowEnd.l-grid-cell-#{$n}
+		{
+		& .story
+			{				
+				padding-left:6%;
+				padding-right:0;
+		}
+	}
+}
+
+@include story_centerGridPadding(3);
+@include story_centerGridPadding(5);

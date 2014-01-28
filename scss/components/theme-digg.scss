@@ -4,7 +4,9 @@
 }
 
 .digg-mostDuggVideos
-{
+	{
+		background:url("../images/bg-video.jpeg");
+		background-size:cover;
 
 }
 
@@ -21,17 +23,42 @@
 
 
 
+//////// topBar///////
+.l-topBar
+	{
+		-webkit-box-shadow: 0 0 2px 0 rgba(0,0,0,0.5);
+		box-shadow: 0 0 2px 0 rgba(0,0,0,0.5);
+		border-bottom-width: 0;	background-color:#fff; z-index:10000;
+}
+
+/////// story /////////
+
+.story
+	{
+
+	&.story-fullWidth
+		{
+			border-bottom-color: #ebebeb;
+
+	}
+}
+
+
+//////// section-title /////////
+.section-title
+	{
+	
+	&.section-title-onDark
+		{
+			color:#fff;
+	}
+} 
+
 
 /////// shareStats ////////
 
 
-.shareStats-stat
-	{
-	&::before
-		{
-			background: url("../images/sprite-digg-icons.png"); 
-	}
-}
+
 
 .shareStats-digg
 	{
@@ -56,6 +83,159 @@
 }
 
 
+.shareStats
+	{
+		color: #444;
+
+
+	.speechBubble
+		{
+	}
+		
+		
+	.shareStats-front
+		{
+
+	}
+	
+	.shareStats-stat
+		{
+
+		&::before
+			{
+				background: url("../images/sprite-digg-icons.png"); 
+		}
+	}
+
+	.shareStats-digg
+		{
+		
+
+	}
+	.shareStats-fb
+		{
+
+	}
+	.shareStats-t
+		{
+
+	}
+	.shareStats-digit
+		{
+
+	}
+	.shareStats-name
+		{
+
+	}
+
+	&.shareStats-onDark
+		{
+
+		.shareStats-front
+			{
+				color:#fff;				
+		}
+	}
+}
+
+
+
+/////// sharing ////////////
+
+.sharing
+	{
+		
+
+
+}
+
+
+/////// summary ///////
+
+.summary
+	{
+	
+
+	
+}
+
+.summary
+	{
+	.summary-snippet
+		{
+			color:#555;
+	}
+		
+	.summary-headline
+		{
+			color:#191919;
+	}
+		
+	.summary-exerpt
+		{
+			color: #444;
+	}
+		
+
+	&.summary-large
+		{
+
+		.summary-headline
+			{
+
+		}
+
+		.summary-exerpt
+			{
+
+		}
+
+	}
+	&.summary-small
+		{
+
+	}
+
+	&.summary-onDark
+		{
+			color:#fff;
+
+		.summary-snippet
+			{
+				color:#fff;
+		}
+		
+		
+		& .summary-headline
+			{
+				color:#fff;
+		}
+		
+	}
+}
+
+
+
+/////// btn //////////////
+
+.btn
+	{
+
+	&.btn-hollow
+		{
+			color: #0093cc; border-color: rgba(220,235,245,0);
+
+		&:hover, &.is-hover
+			{
+				border-color: #dcebf5;
+		}
+	}
+
+}
+
+
+
 ////// speechBubble ////////
 
 .speechBubble
@@ -78,4 +258,81 @@
 		}
 	}
 	
+}
+
+
+
+///////// nav ///////////
+
+.nav-item
+	{
+	
+	a
+		{
+			color: #aaa;
+			text-decoration: none;
+
+			-webkit-transition: color 120ms cubic-bezier(0.455,0.03,0.515,0.955);
+			-moz-transition: color 120ms cubic-bezier(0.455,0.03,0.515,0.955);
+			-o-transition: color 120ms cubic-bezier(0.455,0.03,0.515,0.955);
+			transition: color 120ms cubic-bezier(0.455,0.03,0.515,0.955);
+	}
+}
+
+.nav-secondary
+	{
+		
+	
+	> .nav-item
+		{
+		a 
+			{
+			 color: #7a7a7a;
+		}
+	}
+	
+}
+
+
+///////// icn /////////////
+
+
+
+
+
+
+
+////////// proxime //////////
+
+
+.proxime
+	{
+		color: #606060;
+
+	li
+		{
+
+	}
+	.proxime-shareStats
+		{
+
+	}
+	.proxime-source
+		{
+
+	}
+	.proxime-type
+		{
+
+	}
+	.proxime-tag
+		{
+
+	}
+
+
+	&.proxime-onDark
+		{
+			color: #fff;
+	}
 }
