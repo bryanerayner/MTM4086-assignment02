@@ -8,7 +8,7 @@
 		&::before
 			{
 				content:"\00b7";//Equivalent to &middot;
-				display:inline-block;
+				display:inline-block; padding-right:5px;
 
 		}
 

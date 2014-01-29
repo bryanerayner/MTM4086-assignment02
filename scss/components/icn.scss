@@ -29,26 +29,30 @@
 
 .icn.icn-lg 
 	{
-
+		width: 33px; height: 33px; float: left;
+		display: block;
 
 	&.icn-t
 		{
-
+			background-image:url("../images/logo-twitter.png");
 	}
 	&.icn-tblr
 		{
-
+			background-image:url("../images/logo-tblr.png");
 	}
 	&.icn-fb
 		{
+			background-image:url("../images/logo-fb.png");
 
 	}
 	&.icn-g
 		{
+			background-image:url("../images/logo-gplus.png");
 
 	}
 	&.icn-rss
 		{
+			background-image:url("../images/logo-rss.png");
 
 	}
 }

@@ -27,6 +27,162 @@
 
 }
 
+.l-footer
+	{
+		background-color:#d6d6d6; color:#606060;
+}
+
+
+/////// layout-digg //////////
+
+
+.l-digg-upcoming
+	{
+
+}
+
+.l-digg-mostDugg
+	{
+
+	ol 
+		{
+		
+		> li
+			{
+
+			&::before
+				{
+
+			}
+		}			
+	}
+}
+
+.l-digg-footerList
+	{
+
+	.l-digg-footerList-item
+		{
+
+	}
+
+	.l-digg-footerList-content
+		{
+			color:#7a7a7a;
+	}
+}
+
+
+///////// Layout ///////////
+
+
+.l-left
+	{
+	}
+
+.l-right
+	{
+	}
+
+.l-constrained
+	{
+
+
+		&.l-constrained-wider
+			{
+			}
+	}
+
+.l-topBar
+	{
+
+	&.is-pinned
+		{
+	}
+}
+
+.l-bottomBar
+	{
+		border-color: #cacaca;
+
+}
+
+.l-title
+	{
+}
+
+.l-colourstrip 
+	{
+
+}
+
+.l-viewMore
+	{
+
+
+}
+
+
+.l-grid-container
+	{
+
+
+	[class*="l-grid-cell"]
+		{
+
+		&:last-child
+			{
+
+		}
+
+		&:last-child.l-grid-last
+			{
+				
+		}
+
+	}
+
+	.l-grid-cell-1
+		{
+		
+	}
+
+	.l-grid-cell-3
+		{
+		
+	}	
+
+	.l-grid-cell-5
+		{
+		
+	}
+}
+
+.l-list-container
+	{
+
+	.l-list-1
+		{
+	}
+}
+
+.l-list-horizontal-container
+	{
+	li
+		{
+	}
+}
+
+.l-relative
+	{
+}
+
+.l-absoluteCenter
+	{
+
+}
+
+
 
 //////// topBar///////
 .l-topBar
@@ -242,6 +398,11 @@
 		}
 	}
 
+	&.btn-flat
+		{
+			background-color: #efefef; border-color:#d6d6d6; color:#666;
+
+	}
 }
 
 
@@ -291,13 +452,13 @@
 
 .nav-secondary
 	{
-		
+		color: #7a7a7a;
 	
 	> .nav-item
 		{
 		a 
 			{
-			 color: #7a7a7a;
+			 
 		}
 	}
 	
@@ -346,3 +507,100 @@
 			color: #fff;
 	}
 }
+
+
+
+/////////// Link ////////////
+
+.link-primary
+	{
+	
+		&.is-active
+		{
+
+		}
+	} 
+.link-secondary
+	{
+
+		&.link-sign-in
+		{
+			color:#0093cc;
+
+		}
+	}
+
+.link-title 
+	{
+
+		&.l-viewMore
+		{
+
+		}
+	}
+
+.link-plaintext
+	{
+
+	}
+
+.link-plain
+	{
+		color: #7a7a7a;
+}
+
+
+////// Callout ///////////
+
+
+.callout 
+	{
+
+	.callout-title, .callout-action, .callout-tagline
+		{
+	}
+
+	.callout-title
+		{
+
+	}
+
+	.callout-tagline 
+		{
+	}
+
+	.callout-action
+		{
+	}
+
+	.callout-image 
+		{
+
+
+	}
+
+	&.callout-first
+		{
+
+		.callout-tagline 
+			{
+
+		}
+	}
+	&.callout-middle
+		{
+			border-color: #cacaca;
+	}
+	&.callout-last 
+		{
+	}
+
+}
+
+
+
+
+
+
+
+

@@ -17,8 +17,7 @@ $l-constrained-wider--max-width:1200px !default;
 .l-constrained
 	{
 		max-width:$l-constrained--max-width;
-		width:100%;
-		margin: 0 auto;
+		width:100%; margin: 0 auto;
 
 		@extend %clearfix;
 		&.l-constrained-wider
@@ -30,14 +29,20 @@ $l-constrained-wider--max-width:1200px !default;
 .l-topBar
 	{
 		position:relative;
-		top:0;
-		width:100%;
+		top:0; width:100%;
 
-		&.is-pinned
+	&.is-pinned
 		{
 			position: fixed;
-		}
 	}
+}
+
+.l-bottomBar
+	{
+		border:1px solid; padding:18px 30px 0;
+		width:100%;
+
+}
 
 .l-title
 	{
@@ -101,16 +106,29 @@ $l-constrained-wider--max-width:1200px !default;
 
 .l-list-container
 	{
-		.l-list-1
-			{
 
-			}
+	.l-list-1
+		{
+			float:left; width: 100%;
 	}
+}
 
 .l-list-horizontal-container
 	{
-		li
-			{
-
-			}
+	li
+		{
+			float:left; margin-right:20px;
 	}
+}
+
+.l-relative
+	{
+		position: relative;
+}
+
+.l-absoluteCenter
+	{
+		margin:auto; position:absolute;
+		left:0;top:0;right:0;bottom:0;
+
+}

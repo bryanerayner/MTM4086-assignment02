@@ -1,8 +1,12 @@
+$typography--font-size--smaller: .875em !default;
+$typography--font-family--secondary: Arial sans-serif !default;
+
 .section-title
 	{
 		padding: 25px 0;
-		font: .875em "lft-etica","Helvetica Neue",Helvetica,Arial,sans-serif;
+		font: #{$typography--font-size--smaller} #{$typography--font-family--secondary};
 		float:left; text-transform:uppercase;
+		
 	&.section-title-onDark
 		{
 

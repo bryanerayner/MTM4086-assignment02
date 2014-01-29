@@ -1,6 +1,6 @@
 .btn.btn-hollow {
   float: left;
-  font-size: .875em;
+  font-size: 0.875em;
   text-decoration: none;
   border: 1px solid;
   border-radius: 4px;
@@ -9,3 +9,14 @@
   margin-right: -2px; }
   .btn.btn-hollow .icn {
     margin-top: -1px; }
+.btn.btn-flat {
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  font-size: 0.975em;
+  padding: 9px 16px 7px 17px;
+  text-decoration: none;
+  border: 1px solid;
+  min-height: 34px; }
+  .btn.btn-flat.btn-skinny {
+    padding: 9px 8px 7px 8px; }

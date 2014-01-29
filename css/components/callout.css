@@ -1,0 +1,42 @@
+.callout:after, .callout .callout-action:after {
+  display: table;
+  content: " ";
+  clear: both; }
+
+.callout {
+  position: relative;
+  min-height: 300px;
+  float: left;
+  font-size: 0.875em; }
+  .callout .callout-title, .callout .callout-action, .callout .callout-tagline {
+    float: left;
+    clear: left; }
+  .callout .callout-title {
+    font-size: 0.975em;
+    margin-top: 1.3em; }
+  .callout .callout-tagline {
+    font-size: 0.875em; }
+  .callout .callout-action {
+    position: absolute;
+    top: 9em;
+    left: 1em; }
+  .callout .callout-image {
+    position: absolute;
+    right: 20px;
+    top: -9px; }
+  .callout.callout-first {
+    width: 47%; }
+    .callout.callout-first .callout-action {
+      left: 0em; }
+    .callout.callout-first .callout-tagline {
+      width: 40%; }
+  .callout.callout-middle {
+    width: 28%;
+    border-right: 1px solid;
+    border-left: 1px solid;
+    padding-left: 1em;
+    padding-right: 1em; }
+  .callout.callout-last {
+    width: 25%;
+    float: right;
+    padding-left: 1em; }

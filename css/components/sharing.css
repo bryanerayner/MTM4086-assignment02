@@ -3,7 +3,8 @@
   -moz-transition: opacity 0.15s cubic-bezier(0, 0, 0.58, 1);
   -o-transition: opacity 0.15s cubic-bezier(0, 0, 0.58, 1);
   transition: opacity 0.15s cubic-bezier(0, 0, 0.58, 1);
-  opacity: 0; }
+  opacity: 0;
+  margin-left: -3px; }
 
 .story:hover .sharing, .summary:hover .sharing {
   opacity: 1; }

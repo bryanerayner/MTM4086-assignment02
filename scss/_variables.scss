@@ -1,2 +1,24 @@
 $l-constrained--max-width:1024px !default;
 $l-constrained-wider--max-width:1200px !default;
+
+
+
+$typography--font-family: "source-sans-pro","Helvetica Neue",sans-serif;
+$typography--font-family--secondary: "lft-etica","Helvetica Neue",Helvetica,Arial,sans-serif;
+
+$typography--font-size: "100%/120%";
+
+$typography--font-size--small: .975em;
+$typography--font-size--smaller: .875em;
+$typography--font-size--smallest: .750em;
+$typography--font-size--tiny: .7em;
+
+
+$colours--primary:black;
+$colours--secondary:black;
+$colours--tertiary:black;
+
+$mq-screen--large:1104px;
+$mq-screen--medium:640px;
+$mq-screen--small:480px;
+

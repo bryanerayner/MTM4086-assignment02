@@ -1,9 +1,11 @@
+$typography--font-size--smallest: Arial sans-serif !default;
+
 @import "mixins/layout";
 
 .proxime
 	{
 		@extend %clearfix;
-		width:100%; font-size: .750em;
+		width:100%; font-size: $typography--font-size--smallest;
 		-webkit-font-smoothing: antialiased; white-space: nowrap;
 
 	li

@@ -12,7 +12,7 @@
 
 	.summary
 		{
-						
+			margin-top: 1em;
 	}
 
 	&.story-fullWidth
@@ -26,20 +26,23 @@
 
 		.summary
 			{
-				width: 31%;
-				float:right;
+				width: 31%; float:right; margin-top:0;
 		}
 		
 	}
 
 	&.story-small
 		{
-		
+		.summary 
+			{
+				padding-top:1em;
+
+		}
 	}
 
 	&.story-list
 		{
-			position: relative; border-bottom:1px solid;
+			position: relative; border-bottom: 1px solid;
 		
 		> .story-list-counter
 			{
@@ -61,14 +64,17 @@
 		}
 
 		.summary{
-			float:right;
-
+			float:right; width: 65%; margin-top: 0;
 		}
 	}
 
 	&.story-summary
 		{
 		
+		.summary
+			{
+				margin-top: 0;
+		}
 	}
 
 }
@@ -76,7 +82,11 @@
 
 //Enable grid to work with padding:
 
+li:last-child .story.story-list
+	{
+		border-bottom:0px;
 
+}
 
 @mixin story_centerGridPadding($n)
 	{
@@ -85,8 +95,7 @@
 		{
 		& .story
 			{
-				padding-left:0;
-				padding-right:6%;
+				padding-right:6%; padding-left:0;
 		}
 	}
 
@@ -94,8 +103,7 @@
 		{
 		& .story
 			{				
-				padding-left:6%;
-				padding-right:0;
+				padding-left:6%; padding-right:0;
 		}
 	}
 }
