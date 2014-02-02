@@ -1,5 +1,10 @@
 @import "mixins/layout";
 
+$mq-screen--large:1104px !default;
+$mq-screen--medium:640px !default;
+$mq-screen--small:480px !default;
+
+
 .story 
 	{
 		width:100%; float:left; padding: 3% 3% 6%; margin:0 0 7px;
@@ -15,18 +20,41 @@
 			margin-top: 1em;
 	}
 
+
+	@media(max-width:$mq-screen--small)
+		{
+		.story-image, .story-video, .summary
+			{
+				width:96%;
+				margin-right: 2%; margin-left:2%;
+		}
+	}
+
+
+
 	&.story-fullWidth
 		{
 			border-bottom:1px solid; padding: 17px 0; 
 
 		.story-image, .story-video
 			{
-				float:left; width: 65.64%; margin-right:32px;
+				float:left; width: 65.64%; margin-right:3%;
 		}
 
 		.summary
 			{
 				width: 31%; float:right; margin-top:0;
+		}
+
+		@media(max-width:$mq-screen--medium)
+			{
+
+			.story-image, .story-video, .summary
+			{
+				width:96%;
+				margin-right: 2%; margin-left:2%;
+			}
+
 		}
 		
 	}
@@ -104,6 +132,27 @@ li:last-child .story.story-list
 		& .story
 			{				
 				padding-left:6%; padding-right:0;
+		}
+	}
+
+
+	//Collapse on small 
+	@media(max-width:$mq-screen--small)
+		{
+		.l-grid-rowStart.l-grid-cell-#{$n}
+			{
+			& .story
+				{
+					padding-right:0; padding-left:0;
+			}
+		}
+
+		.l-grid-rowEnd.l-grid-cell-#{$n}
+			{
+			& .story
+				{				
+					padding-left:0; padding-right:0;
+			}
 		}
 	}
 }

@@ -4,6 +4,10 @@
 $l-constrained--max-width:1024px !default;
 $l-constrained-wider--max-width:1200px !default;
 
+$mq-screen--large:1104px !default;
+$mq-screen--medium:640px !default;
+$mq-screen--small:480px !default;
+
 .l-left
 	{
 		float:left;
@@ -101,6 +105,25 @@ $l-constrained-wider--max-width:1200px !default;
 		{
 			width:20%;
 
+	}
+
+
+	@media(max-width:$mq-screen--small)
+		{
+			.l-grid-sm-cell-1
+			{
+				width:100%;
+			}
+
+			.l-grid-sm-cell-3
+			{
+				width:33.33%;
+			}	
+
+			.l-grid-sm-cell-5
+			{
+				width:20%;
+			}		
 	}
 }
 
