@@ -1,0 +1,19 @@
+@import "mixins/presentation";
+
+
+.speechBubble
+	{
+		border-radius: 5px; border: 1px solid; padding:10px 8px;
+		position:absolute; left:-10px; background-color:#fff;
+
+	.arrow
+		{
+			top:100%;
+	}
+
+	&.is-speechBubble-collapsed
+		{
+			display:none;
+
+	}
+}

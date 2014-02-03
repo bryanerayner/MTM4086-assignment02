@@ -1,0 +1,14 @@
+.proxime:after {
+  display: table;
+  content: " ";
+  clear: both; }
+
+.proxime {
+  width: 100%;
+  font-size: Arial sans-serif;
+  -webkit-font-smoothing: antialiased;
+  white-space: nowrap; }
+  .proxime li {
+    float: left; }
+  .proxime .proxime-shareStats {
+    margin-top: -1px; }

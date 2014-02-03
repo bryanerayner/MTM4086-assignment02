@@ -1,0 +1,32 @@
+.nav-primary
+	{
+		float:left;
+ 	
+ 	> .nav-item
+ 		{
+			text-transform: uppercase;
+ 	}
+}
+
+.nav-secondary
+	{
+		float:left;
+	
+	> .nav-item
+		{
+			padding: 1.263em 0 .938em;
+			margin: 0 5px 0 0; color: #7a7a7a;
+			font: #{$typography--font-size--smaller} #{$typography--font-family};
+
+	}
+	
+}
+
+.nav-item
+	{
+		float:left; padding: 1.357em .750em 1.286em;
+		letter-spacing: 1px; 
+		font: #{$typography--font-size--smaller} #{$typography--font-family--secondary}
+
+		
+}

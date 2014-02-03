@@ -1,0 +1,29 @@
+.sharing 
+	{
+		-webkit-transition: opacity .15s cubic-bezier(0,0,0.58,1);
+		-moz-transition: opacity .15s cubic-bezier(0,0,0.58,1);
+		-o-transition: opacity .15s cubic-bezier(0,0,0.58,1);
+		transition: opacity .15s cubic-bezier(0,0,0.58,1);
+		opacity: 0;
+
+		margin-left:-3px;
+
+	&.sharing-lg
+		{
+
+	}
+
+	&.sharing-sm
+		{
+
+	}
+}
+
+.story:hover, .summary:hover
+	{
+	 .sharing
+		 {
+			opacity:1;
+	 }
+
+}

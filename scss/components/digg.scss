@@ -1,0 +1,18 @@
+@import "mixins/layout";
+
+.digg-mostDuggVideos
+{
+
+}
+
+.digg-mostDugg-list
+{
+	border-right: 1px solid;
+	clear:left; padding-right: 5%;
+	@extend %clearfix;
+}
+
+.digg-upcoming-list
+{
+	
+}

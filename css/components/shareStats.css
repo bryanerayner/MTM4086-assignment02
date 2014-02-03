@@ -1,0 +1,18 @@
+.shareStats {
+  position: relative;
+  font-size: 1em;
+  font-weight: bold; }
+  .shareStats .speechBubble {
+    bottom: 125%; }
+  .shareStats .shareStats-stat {
+    float: left;
+    clear: left;
+    width: 100px;
+    padding: .250em 0 .333em; }
+    .shareStats .shareStats-stat::before {
+      content: "";
+      display: inline-block;
+      width: 13px;
+      height: 15px;
+      margin: 0px 10px -2px 0px;
+      background-repeat: no-repeat; }

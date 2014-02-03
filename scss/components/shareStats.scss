@@ -1,0 +1,53 @@
+.shareStats
+	{
+		position: relative;
+		font-size: 1em; font-weight: bold;
+
+
+	.speechBubble
+		{
+			bottom: 125%;
+	}
+		
+		
+	.shareStats-front
+		{
+
+	}
+
+	.shareStats-stat
+		{
+			float:left; clear:left; width:100px;
+			padding: .250em 0 .333em;
+
+
+		&::before
+			{
+				content:""; display:inline-block;
+				width:13px; height:15px; margin: 0px 10px -2px 0px;
+				background-repeat: no-repeat;
+		}
+	}
+	
+	.shareStats-digg
+		{
+		
+
+	}
+	.shareStats-fb
+		{
+
+	}
+	.shareStats-t
+		{
+
+	}
+	.shareStats-digit
+		{
+
+	}
+	.shareStats-name
+		{
+
+	}
+}

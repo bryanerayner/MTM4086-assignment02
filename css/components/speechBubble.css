@@ -1,0 +1,19 @@
+/*
+
+ Includes styles for differing types of presntation elements. 
+ Rounded borders, CSS arrows, etc are found here.
+
+
+
+ */
+.speechBubble {
+  border-radius: 5px;
+  border: 1px solid;
+  padding: 10px 8px;
+  position: absolute;
+  left: -10px;
+  background-color: #fff; }
+  .speechBubble .arrow {
+    top: 100%; }
+  .speechBubble.is-speechBubble-collapsed {
+    display: none; }

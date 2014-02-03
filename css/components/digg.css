@@ -1,0 +1,9 @@
+.digg-mostDugg-list:after {
+  display: table;
+  content: " ";
+  clear: both; }
+
+.digg-mostDugg-list {
+  border-right: 1px solid;
+  clear: left;
+  padding-right: 5%; }

@@ -1,0 +1,606 @@
+.is-hoverable
+{
+
+}
+
+.digg-mostDuggVideos
+	{
+		background:url("../images/bg-video.jpeg");
+		background-size:cover;
+
+}
+
+.digg-mostDugg-list
+	{
+		border-right-color: #ebebeb;
+
+}
+
+.digg-upcoming-list
+{
+	
+}
+
+.l-digg-mostDugg
+	{
+		
+
+}
+
+.l-footer
+	{
+		background-color:#d6d6d6; color:#606060;
+}
+
+
+/////// layout-digg //////////
+
+
+.l-digg-upcoming
+	{
+
+}
+
+.l-digg-mostDugg
+	{
+
+	ol 
+		{
+		
+		> li
+			{
+
+			&::before
+				{
+
+			}
+		}			
+	}
+}
+
+.l-digg-footerList
+	{
+
+	.l-digg-footerList-item
+		{
+
+	}
+
+	.l-digg-footerList-content
+		{
+			color:#7a7a7a;
+	}
+}
+
+
+///////// Layout ///////////
+
+
+.l-left
+	{
+	}
+
+.l-right
+	{
+	}
+
+.l-constrained
+	{
+
+
+		&.l-constrained-wider
+			{
+			}
+	}
+
+.l-topBar
+	{
+
+	&.is-pinned
+		{
+	}
+}
+
+.l-bottomBar
+	{
+		border-color: #cacaca;
+
+}
+
+.l-title
+	{
+}
+
+.l-colourstrip 
+	{
+
+}
+
+.l-viewMore
+	{
+
+
+}
+
+
+.l-grid-container
+	{
+
+
+	[class*="l-grid-cell"]
+		{
+
+		&:last-child
+			{
+
+		}
+
+		&:last-child.l-grid-last
+			{
+				
+		}
+
+	}
+
+	.l-grid-cell-1
+		{
+		
+	}
+
+	.l-grid-cell-3
+		{
+		
+	}	
+
+	.l-grid-cell-5
+		{
+		
+	}
+}
+
+.l-list-container
+	{
+
+	.l-list-1
+		{
+	}
+}
+
+.l-list-horizontal-container
+	{
+	li
+		{
+	}
+}
+
+.l-relative
+	{
+}
+
+.l-absoluteCenter
+	{
+
+}
+
+
+
+//////// topBar///////
+.l-topBar
+	{
+		-webkit-box-shadow: 0 0 2px 0 rgba(0,0,0,0.5);
+		box-shadow: 0 0 2px 0 rgba(0,0,0,0.5);
+		border-bottom-width: 0;	background-color:#fff; z-index:10000;
+}
+
+/////// story /////////
+
+.story
+	{
+
+	&.story-fullWidth
+		{
+			border-bottom-color: #ebebeb;
+
+	}
+
+	&.story-list
+		{
+			border-bottom-color:#ebebeb;
+	}
+}
+
+
+//////// section-title /////////
+.section-title
+	{
+	
+	&.section-title-onDark
+		{
+			color:#fff;
+	}
+} 
+
+
+/////// shareStats ////////
+
+
+
+
+.shareStats-digg
+	{
+	&::before
+		{
+			background-position: 2px -189px;
+	}			
+}
+.shareStats-fb
+	{
+	&::before
+		{
+			background-position: 0px -263px;
+	}			
+}
+.shareStats-t
+	{
+	&::before
+		{
+			background-position: 0px -227px;
+	}			
+}
+
+
+.shareStats
+	{
+		color: #444;
+
+
+	.speechBubble
+		{
+	}
+		
+		
+	.shareStats-front
+		{
+
+	}
+	
+	.shareStats-stat
+		{
+
+		&::before
+			{
+				background: url("../images/sprite-digg-icons.png"); 
+		}
+	}
+
+	.shareStats-digg
+		{
+		
+
+	}
+	.shareStats-fb
+		{
+
+	}
+	.shareStats-t
+		{
+
+	}
+	.shareStats-digit
+		{
+
+	}
+	.shareStats-name
+		{
+
+	}
+
+	&.shareStats-onDark
+		{
+
+		.shareStats-front
+			{
+				color:#fff;				
+		}
+	}
+}
+
+
+
+/////// sharing ////////////
+
+.sharing
+	{
+		
+
+
+}
+
+
+/////// summary ///////
+
+.summary
+	{
+	
+
+	
+}
+
+.summary
+	{
+	.summary-snippet
+		{
+			color:#555;
+	}
+		
+	.summary-headline
+		{
+			color:#191919;
+	}
+		
+	.summary-exerpt
+		{
+			color: #444;
+	}
+		
+
+	&.summary-large
+		{
+
+		.summary-headline
+			{
+
+		}
+
+		.summary-exerpt
+			{
+
+		}
+
+	}
+	&.summary-small
+		{
+
+	}
+
+	&.summary-onDark
+		{
+			color:#fff;
+
+		.summary-snippet
+			{
+				color:#fff;
+		}
+		
+		
+		& .summary-headline
+			{
+				color:#fff;
+		}
+		
+	}
+}
+
+
+
+/////// btn //////////////
+
+.btn
+	{
+
+	&.btn-hollow
+		{
+			color: #0093cc; border-color: rgba(220,235,245,0);
+
+		&:hover, &.is-hover
+			{
+				border-color: #dcebf5;
+		}
+	}
+
+	&.btn-flat
+		{
+			background-color: #efefef; border-color:#d6d6d6; color:#666;
+
+	}
+}
+
+
+
+////// speechBubble ////////
+
+.speechBubble
+	{
+		-webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+		box-shadow: 0 5px 10px rgba(0,0,0,0.15); 
+		border-color: rgba(0,0,0,0.2);
+		background-color:rgba(250,250,250,0.97);
+}
+
+/////// arrow /////////////
+.arrow
+	{
+	&.arrow-down
+		{
+		border-top-color: rgba(0,0,0,0.25);
+		&::after
+			{
+			border-top-color: rgba(250,250,250,0.97);
+		}
+	}
+	
+}
+
+
+
+///////// nav ///////////
+
+.nav-item
+	{
+	
+	a
+		{
+			color: #aaa;
+			text-decoration: none;
+
+			-webkit-transition: color 120ms cubic-bezier(0.455,0.03,0.515,0.955);
+			-moz-transition: color 120ms cubic-bezier(0.455,0.03,0.515,0.955);
+			-o-transition: color 120ms cubic-bezier(0.455,0.03,0.515,0.955);
+			transition: color 120ms cubic-bezier(0.455,0.03,0.515,0.955);
+	}
+}
+
+.nav-secondary
+	{
+		color: #7a7a7a;
+	
+	> .nav-item
+		{
+		a 
+			{
+			 
+		}
+	}
+	
+}
+
+
+///////// icn /////////////
+
+
+
+
+
+
+
+////////// proxime //////////
+
+
+.proxime
+	{
+		color: #606060;
+
+	li
+		{
+
+	}
+	.proxime-shareStats
+		{
+
+	}
+	.proxime-source
+		{
+
+	}
+	.proxime-type
+		{
+
+	}
+	.proxime-tag
+		{
+
+	}
+
+
+	&.proxime-onDark
+		{
+			color: #fff;
+	}
+}
+
+
+
+/////////// Link ////////////
+
+.link-primary
+	{
+	
+		&.is-active
+		{
+
+		}
+	} 
+.link-secondary
+	{
+
+		&.link-sign-in
+		{
+			color:#0093cc;
+
+		}
+	}
+
+.link-title 
+	{
+
+		&.l-viewMore
+		{
+
+		}
+	}
+
+.link-plaintext
+	{
+
+	}
+
+.link-plain
+	{
+		color: #7a7a7a;
+}
+
+
+////// Callout ///////////
+
+
+.callout 
+	{
+
+	.callout-title, .callout-action, .callout-tagline
+		{
+	}
+
+	.callout-title
+		{
+
+	}
+
+	.callout-tagline 
+		{
+	}
+
+	.callout-action
+		{
+	}
+
+	.callout-image 
+		{
+
+
+	}
+
+	&.callout-first
+		{
+
+		.callout-tagline 
+			{
+
+		}
+	}
+	&.callout-middle
+		{
+			border-color: #cacaca;
+	}
+	&.callout-last 
+		{
+	}
+
+}
+
+
+
+
+
+
+
+

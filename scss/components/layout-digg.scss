@@ -1,0 +1,42 @@
+.l-digg-upcoming
+	{
+		width:33%;
+		float:right;
+
+}
+
+.l-digg-mostDugg
+	{
+		width:66%; float:left;
+
+	ol 
+		{
+		
+		> li
+			{
+				position: relative;
+
+			&::before
+				{
+					float:left; display: block; position: relative;
+					left: -1em; top: 1.35em;
+			}
+		}			
+	}
+}
+
+.l-digg-footerList
+	{
+		float:left; clear:left; margin-top: 1em;
+		width:100%;
+
+	.l-digg-footerList-item
+		{
+
+	}
+
+	.l-digg-footerList-content
+		{
+			width: 80%; height: 1.5em;
+	}
+}

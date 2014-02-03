@@ -1,0 +1,10 @@
+.link-plaintext {
+  text-decoration: none;
+  padding-left: 1em; }
+
+.link-plain {
+  font-size: 0.875em;
+  text-decoration: none; }
+
+.link-smaller {
+  font-size: 0.7em; }
